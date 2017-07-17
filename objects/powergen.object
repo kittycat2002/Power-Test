@@ -1,0 +1,32 @@
+{
+	"objectName" : "powergen",
+	"rarity" : "Common",
+	"description" : "powergen",
+	"shortdescription" : "Power Gen",
+	"race" : "generic",
+
+	"category" : "wire",
+	"price" : 75,
+	
+	"inventoryIcon" : "repeatericon.png",
+	"orientations" : [
+		{
+			"image" : "repeater.png:<color>.off",
+			"imagePosition" : [0, 0],
+
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ]
+		}
+	],
+	"animationParts" : {
+		"repeater" : "repeater.png"
+	},
+	"animationPosition" : [0, 0],
+	"scripts" : [ "/scripts/power.lua","gen.lua" ],
+
+	"inputNodes" : [ [0,0]],
+
+	"outputNodes" : [ [0, 1] ],
+	"scriptDelta" : 60,
+	"powertype" : "output"
+}
