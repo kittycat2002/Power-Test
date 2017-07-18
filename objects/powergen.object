@@ -4,7 +4,7 @@
 	"description" : "powergen",
 	"shortdescription" : "Power Gen",
 	"race" : "generic",
-
+	"objectType" : "container",
 	"category" : "wire",
 	"price" : 75,
 	
@@ -28,5 +28,15 @@
 
 	"outputNodes" : [ [0, 1] ],
 	"scriptDelta" : 60,
-	"powertype" : "output"
+	"powertype" : "output",
+	"slotCount" : 1,
+    "uiConfig" : "/interface/chests/chest<slots>.config",
+    "frameCooldown" : 67,
+    "autoCloseCooldown" : 3600,
+	"generatorconfig" : {
+	  "liquidwater" : {"power":4,"time":30},
+	  "waterbucket" : {"power":4,"time":30},
+	  "coalore" : {"power":7,"time":60},
+	  "logblock" : {"power":7,"time":60}
+	}
 }

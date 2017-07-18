@@ -75,6 +75,7 @@ end
 
 function power.sendPowerToBatteries()
   if (storage.energy or 0) > 0 then
+    entityListLength()
     for key,value in pairs(storage.entitylist.battery) do
       message = world.sendEntityMessage(value,'getstorageleft')
 	  while not message:result() do end
